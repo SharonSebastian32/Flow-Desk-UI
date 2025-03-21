@@ -1,4 +1,4 @@
-import "./ArrivedReChart.scss";
+import "./ArrivedChart.scss";
 import {
   AreaChart,
   Area,
