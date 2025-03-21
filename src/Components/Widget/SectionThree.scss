@@ -1,0 +1,13 @@
+.section-three {
+  display: grid;
+  grid-template-columns: 305px auto auto 308px;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding-top: 10px;
+
+  .total {
+     border-radius: 15px;
+    height: 206px;
+    background-color: #fff;
+  }
+}

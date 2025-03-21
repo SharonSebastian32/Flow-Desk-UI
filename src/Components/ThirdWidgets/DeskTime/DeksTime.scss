@@ -1,0 +1,61 @@
+.desk-bar-container {
+  color: red;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  border-radius: 50px;
+  margin: 5px;
+  border: 1px solid #5e5e5e3d;
+  .user-name {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+  .desk-time {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #4bc769;
+    padding-right: 5px;
+  }
+  .name-avatar {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: white;
+  }
+  .avatar {
+    color: black;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 7px;
+  }
+}
+
+.title-desk {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #252c58;
+}

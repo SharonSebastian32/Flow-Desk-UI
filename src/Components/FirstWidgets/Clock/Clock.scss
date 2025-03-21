@@ -1,0 +1,74 @@
+.clock-container {
+  margin: 50px 30px;
+  background-color: rgb(255, 255, 255);
+  #sun {
+    height: 50px;
+    width: 50px;
+    color: #ff9500;
+  }
+  #sub-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  #time {
+    display: flex;
+    flex-direction: column;
+  }
+  #timer {
+    font-family: "Lexend";
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #8c8f9e;
+  }
+  #insight {
+    font-family: "Lexend";
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #8c8f9e;
+    padding-top: 2px;
+  }
+}
+
+.day-date {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4px;
+  padding-top: 20px;
+
+  #today {
+    font-weight: 600;
+    font-size: 16px;
+    color: "#252C58";
+  }
+  #date {
+    padding-top: 8px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+#view {
+  padding-top: 20px;
+
+  #clock-button {
+    border: none;
+    font-family: Lexend;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    width: 218px;
+    height: 41px;
+    padding: 7px 20px;
+    background: linear-gradient(90deg, #FCB339 0%, #ff1a00 100%);
+    border-radius: 20px;
+    color: #ffffff;
+  }
+}

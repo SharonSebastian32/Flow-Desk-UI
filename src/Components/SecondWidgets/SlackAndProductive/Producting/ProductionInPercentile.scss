@@ -1,0 +1,76 @@
+.production-in-percentile {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+ 
+  display: flex;
+  flex-direction: row;
+
+  .ppercentile-details {
+    width: 60%;
+  }
+
+  .ppercentile-charts {
+    width: 40%;
+   }
+
+  .ppercentile-content {
+    font-family: Montserrat;
+    font-weight: 600;
+    color: "#000000";
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+
+  #productivity-icon {
+    color: #00a76f;
+    background-color: #f1f1f1;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-content-percentile {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  #trend-arrow-up {
+    color: #398403;
+    background-color: #c5ffa9;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  .ppercentile-less {
+    font-family: Lexend;
+    font-weight: 300;
+    font-size: 10px;
+    leading-trim: Cap height;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: "#252C58";
+  }
+
+  .arrow-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+  }
+}
+.ppercentile-content-1 {
+  font-family: Lexend;
+  font-weight: 300;
+  font-size: 12px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: "#252C58";
+}

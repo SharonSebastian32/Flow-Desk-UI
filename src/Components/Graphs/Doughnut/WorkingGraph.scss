@@ -1,0 +1,63 @@
+.working-time-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.card-title {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.legend-container {
+  margin-top: 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 13px;
+
+  .legend-marker {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .legend-label {
+    color: #333333;
+    flex-grow: 1;
+  }
+
+  .legend-value {
+    font-weight: 500;
+    color: #333333;
+  }
+
+  .at-desk {
+    background-color: #4f45b6;
+  }
+
+  .idle {
+    background-color: #f8c140;
+  }
+
+  .offline {
+    background-color: #f58869;
+  }
+}

@@ -1,0 +1,15 @@
+.section-one-container {
+  color: black;
+  display: grid; 
+  grid-template-columns: 305px 800px 305px;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.item {
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+
+ 

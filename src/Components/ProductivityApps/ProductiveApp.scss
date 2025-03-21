@@ -1,0 +1,84 @@
+.productive-apps {
+  color: rgb(0, 0, 0);
+  margin: 10px 12px;
+  .sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+  }
+  .title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .arrow-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  #arrow-down-icon {
+    background-color: #ffd1d1;
+    color: #900c0c;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .productive-apps-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #252c58;
+  }
+}
+.app-bar {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px 12px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(176, 174, 174);
+}
+.app-bar div {
+  display: flex;
+  flex-direction: row;
+}
+.app-bar img {
+  height: 40px;
+  width: 40px;
+}
+.sub-app-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+#time-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
