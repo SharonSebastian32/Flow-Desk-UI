@@ -3,7 +3,7 @@ import "../Productivity/ProductivityHigh.scss";
 import { IoMdTrendingUp } from "react-icons/io";
 import Navi from "../../../../assets/Navigator.png";
 import ArrivedImage from "../../../../assets/arrived.png";
-import ArrivedReChart from "../../../Graphs/ReaGradienntCharts/ArrivedReChart/ArrivedReChart";
+import ArrivedReChart from "../../../Graphs/ReaGradienntCharts/ArrivedReGraph/ArrivedReChart";
 function Arrived() {
   return (
     <div className="productivity-high">
