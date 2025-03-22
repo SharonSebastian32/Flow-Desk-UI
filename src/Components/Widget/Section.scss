@@ -1,15 +1,32 @@
 .section-one-container {
   color: black;
-  display: grid; 
+  display: grid;
   grid-template-columns: 305px 800px 305px;
   gap: 10px;
   padding-top: 8px;
+}
+.item {
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.section-one-container {
+  color: black;
+  display: grid;
+  gap: 10px;
+  padding-top: 8px;
+  grid-template-columns: 305px 800px 305px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .item {
   border-radius: 15px;
   background: #ffffff;
 }
-
-
- 

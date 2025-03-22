@@ -11,14 +11,8 @@ function Home() {
     <div className="home">
       <SideBar />
       <div id="DataInformation">
-        {/* Header info */}
         <Header />
-        {/* DashBoard Section One */}
-        <div
-          style={{
-            margin: "10px",
-          }}
-        >
+        <div id="DashBoardSectionS">
           <SectionOne />
           <SectionTwo />
           <SectionThree />

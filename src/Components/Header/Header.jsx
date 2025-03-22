@@ -7,65 +7,67 @@ import { MdOutlineNotifications } from "react-icons/md";
 
 import Logo from "../../assets/Logo.png";
 import "./Header.scss";
+
+const USER_ROLE = [
+  {
+    id: 45,
+    role: "Admin",
+    name: "Muhammed Navab",
+    avatar: "MN",
+    avatarColor: "#F3723E",
+    avatarBackground: "#FFFFFF",
+    messages: true,
+    notification: true,
+    isLoggedIn: true,
+  },
+];
+
 function Header() {
   return (
     <div>
-      <div
-        className="header"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          padding: "6px",
-          justifyContent: "space-between",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            gap: "35px",
-          }}
-        >
+      <div className="header">
+        <div className="left-header">
           <div>
-            <img
-              src={Logo}
-              alt=""
-              style={{
-                width: "144px",
-                height: "36px",
-              }}
-            />
+            <img className="logo-part" src={Logo} alt="" />
           </div>
           <div>
             <input id="search-bar-input" type="text" />
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            // backgroundColor: "red",
-
-            gap: "15px",
-          }}
-        >
-          <div>
+        <div className="icon-container">
+          <div className="notification-wrapper">
             <BiMessageRoundedDetail className="notification-icon" />
+            {USER_ROLE[0].messages && (
+              <span className="notification-dot"></span>
+            )}
           </div>
 
-          <div>
+          <div className="notification-wrapper">
             <MdOutlineNotifications className="notification-icon" />
+            {USER_ROLE[0].notification && (
+              <span className="notification-dot"></span>
+            )}
           </div>
 
-
-          <div id="profile-role-name">
-            <div>Admin</div>
-            <div>Muhammed Navab</div>
-          </div>
-          <div id="avatar-profile">MN</div>
+          {USER_ROLE.map((ROLE) => {
+            return (
+              <div className="profile-container" key={ROLE.id}>
+                <div id="profile-role-name">
+                  <div id="role-name">{ROLE.role}</div>
+                  <div id="user-name">{ROLE.name}</div>
+                </div>
+                <div
+                  id="avatar-profile"
+                  style={{
+                    color: ROLE.avatarColor,
+                    background: ROLE.avatarBackground,
+                  }}
+                >
+                  {ROLE.avatar}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 

@@ -3,19 +3,19 @@ import Navi from "../../../assets/Navigator.png";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import "./DeksTime.scss";
 function DeskTime() {
-  const DeskTimeArray = [
+  const DESK_TIME = [
     {
       id: 1,
-      fname: "Mariya",
+      fname: "Amrutha",
       time: "8h 15m",
-      avatarColor: "#ffd901",
-      avatar: "M",
+      avatarColor: "#ad7af5",
+      avatar: "A",
     },
     {
       id: 2,
       fname: "Sharon",
       time: "5h 15m",
-      avatarColor: "#00ff91",
+      avatarColor: "#c7e566",
       avatar: "S",
     },
   ];
@@ -36,7 +36,7 @@ function DeskTime() {
         </div>
       </div>
       <div className="desk-bar">
-        {DeskTimeArray.map((item) => (
+        {DESK_TIME.map((item) => (
           <div className="desk-bar-container" key={item.id}>
             <div className="user-info">
               <div

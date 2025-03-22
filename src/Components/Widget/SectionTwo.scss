@@ -3,13 +3,12 @@
   column-gap: 6px;
   padding-top: 10px;
   grid-template-columns: 305px auto 308px;
-}
+  .comp {
+    height: 455px;
+    border-radius: 15px;
+  }
 
-.comp {
-  height: 455px;
-  border-radius: 15px;
-}
-
-.working {
-  background-color: #ffffff;
+  .working {
+    background-color: #ffffff;
+  }
 }

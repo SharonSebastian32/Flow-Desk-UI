@@ -14,10 +14,10 @@ function MostProductive() {
     },
     {
       id: 2,
-      fname: "Sharon",
+      fname: "Farsin",
       time: "9h 15m",
       avatarColor: "#00ff91",
-      avatar: "S",
+      avatar: "F",
     },
   ];
   return (
