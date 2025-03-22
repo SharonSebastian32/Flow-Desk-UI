@@ -77,7 +77,7 @@ const ProductivityBarChart = () => {
     fill: {
       opacity: 1,
     },
-    colors: ["#FF9F43", "#EA5455", "#FFCC5C"],
+    colors: ["#F47B3E", "#DE4313", "#F8C140"],
     dataLabels: {
       enabled: false,
     },
