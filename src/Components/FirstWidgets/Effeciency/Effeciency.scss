@@ -1,0 +1,60 @@
+.Eff-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .Eff-sub-container {
+    width: 312px;
+    height: 95px;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06);
+  }
+
+  .Eff-title-container {
+    width: 92px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    margin-left: 16px;
+  }
+
+  .Eff-title {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: "#000000";
+  }
+
+  .Eff-percentage {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    
+  }
+
+  .circular-svg {
+    margin-right: 16px;
+
+    circle {
+      transition: stroke-dashoffset 0.3s ease;
+    }
+
+    text {
+      fill: #333;
+    }
+  }
+}
