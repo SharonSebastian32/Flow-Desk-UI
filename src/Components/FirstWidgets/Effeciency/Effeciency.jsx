@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-function CircularProgressBar({ percentage, color }) {
+function CircularProgressBar({ color, percentage }) {
   const [animatedPercentage, setAnimatedPercentage] = useState(0);
 
   const radius = 35;
@@ -82,7 +82,7 @@ function Effeciency() {
     {
       id: 1,
       title: "Effeciency",
-      percentage: 40,
+      percentage: 35,
       progressBarColor: "#252C58",
     },
     {
@@ -110,11 +110,10 @@ function Effeciency() {
         >
           <div className="Eff-title-container">
             <div className="Eff-title">{item.title}</div>
-            <div className="Eff-percentage">{item.percentage}</div>
-          </div>
+           </div>
           <CircularProgressBar
-            percentage={item.percentage}
             color={item.progressBarColor}
+            percentage={item.percentage}
           />
         </div>
       ))}
@@ -123,3 +122,4 @@ function Effeciency() {
 }
 
 export default Effeciency;
+

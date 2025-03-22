@@ -12,6 +12,8 @@
   "dependencies": {
     "aos": "^2.3.4",
     "apexcharts": "^4.5.0",
+    "britecharts": "^2.18.2",
+    "britecharts-react": "^0.6.5",
     "chart.js": "^4.4.8",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",

@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 import ReactApexChart from "react-apexcharts";
 import "./WorkingGraph.scss";
 
@@ -15,6 +15,19 @@ const CHART_HEIGHT = {
 };
 
 const WorkingTimeDonut = () => {
+  // Calculate real percentages based on series values
+  const total = TIME_DATA.series.reduce((acc, val) => acc + val, 0);
+  const calculatedPercentages = TIME_DATA.series.map((value) =>
+    Math.round((value / total) * 100)
+  );
+
+  // State to track the currently selected segment
+  const [selectedSegment, setSelectedSegment] = useState({
+    label: "Total",
+    percentage: "100%",
+    color: "#666666",
+  });
+
   const chartConfig = {
     series: TIME_DATA.series,
     options: {
@@ -22,27 +35,59 @@ const WorkingTimeDonut = () => {
         type: "donut",
         height: CHART_HEIGHT.default,
         sparkline: { enabled: true },
+        events: {
+          dataPointSelection: (event, chartContext, config) => {
+            const index = config.dataPointIndex;
+            setSelectedSegment({
+              label: TIME_DATA.labels[index],
+              percentage: `${calculatedPercentages[index]}%`,
+              color: TIME_DATA.colors[index],
+            });
+          },
+        },
       },
       colors: TIME_DATA.colors,
       labels: TIME_DATA.labels,
       plotOptions: {
         pie: {
+          expandOnClick: false,
           donut: {
             size: "67%",
             labels: {
               show: true,
-              name: { show: false },
-              value: { show: false },
-              total: {
+              name: {
                 show: true,
-                showAlways: true, // Ensures total is always visible
-                label: "", // Remove label text
+                fontSize: "14px",
+                offsetY: -10,
+              },
+              value: {
+                show: true,
                 fontSize: "20px",
                 fontWeight: 600,
                 color: "#333333",
-                formatter: () => "100%", // Hardcode 100% as the total
+                formatter: function (val) {
+                  const index = TIME_DATA.series.indexOf(Number(val));
+                  return `${calculatedPercentages[index]}%`;
+                },
+              },
+              total: {
+                fontSize: "14px",
+                fontWeight: 400,
+                color: selectedSegment.color,
+                formatter: function () {
+                  return selectedSegment.percentage;
+                },
               },
             },
+          },
+        },
+      },
+      tooltip: {
+        enabled: true,
+        y: {
+          formatter: function (val) {
+            const index = TIME_DATA.series.indexOf(Number(val));
+            return `${calculatedPercentages[index]}%`;
           },
         },
       },
@@ -62,7 +107,7 @@ const WorkingTimeDonut = () => {
 
   const legendItems = TIME_DATA.labels.map((label, index) => ({
     label,
-    value: TIME_DATA.percentages[index],
+    value: `${calculatedPercentages[index]}%`,
     className: label.toLowerCase().replace(" ", "-"),
     key: `legend-${index}`,
   }));
@@ -75,22 +120,10 @@ const WorkingTimeDonut = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          marginTop: "60px",
         }}
       >
-        <div
-          className="chart-wrapper"
-          style={{
-            backgroundColor: "#ECEEFB",
-            padding: "20px",
-            borderRadius: "50%",
-            height: "200px",
-            width: "200px",
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            marginTop: "25px",
-          }}
-        >
+        <div className="chart-wrapper">
           <ReactApexChart
             options={chartConfig.options}
             series={chartConfig.series}
@@ -100,13 +133,22 @@ const WorkingTimeDonut = () => {
         </div>
       </div>
 
-      <div className="legend-container" style={{ marginTop: "70px" }}>
+      <div className="legend-container" style={{ marginTop: "10px" }}>
         {legendItems.map(({ key, className, label, value }) => (
           <div
             key={key}
             className="legend-item"
             style={{
-              margin: "15px",
+              margin: "8px 15px",
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              const index = legendItems.findIndex((item) => item.key === key);
+              setSelectedSegment({
+                label: label,
+                percentage: value,
+                color: TIME_DATA.colors[index],
+              });
             }}
           >
             <div className={`legend-marker ${className}`} />
