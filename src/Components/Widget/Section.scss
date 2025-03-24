@@ -1,7 +1,7 @@
 .section-one-container {
   color: black;
   display: grid;
-  grid-template-columns: 305px 800px 305px;
+  grid-template-columns: 305px 1fr 305px;
   gap: 10px;
   padding-top: 8px;
 }
