@@ -12,6 +12,15 @@
   }
 }
 
+@media (max-width: 430px) {
+  #section-three {
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
 @media (max-width: 1135px) {
   .section-three {
     display: grid;

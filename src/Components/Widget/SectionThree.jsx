@@ -7,7 +7,7 @@ import MostEffective from "../ThirdWidgets/MostEffective/MostEffective";
 
 function SectionThree() {
   return (
-    <div className="section-three">
+    <div className="section-three" id="section-three">
       <div className="total desktime">
         <DeskTime />
       </div>

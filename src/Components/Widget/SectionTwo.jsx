@@ -24,18 +24,7 @@ function SectionTwo() {
       </div>
 
       {/*   Productivity, Absent, Arrived, Late */}
-      <div
-        className="comp main4Components"
-        style={{
-          color: "white",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gridTemplateRows: "1fr 1fr",
-          gap: "10px",
-          marginLeft: "3px",
-          marginRight: "3px",
-        }}
-      >
+      <div className="comp main4Components" id="main4Components">
         <div
           style={{
             backgroundColor: "white",
