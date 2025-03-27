@@ -20,7 +20,7 @@
 @media (max-width: 430px) {
   #DataInformation {
     width: calc(100% - 82px);
-    height: 4100px;
+    height: 100%;
     width: 100%;
   }
 }
@@ -33,7 +33,7 @@
   }
   #DataInformation {
     width: calc(100% - 82px);
-    height: 3334px;
+    height: 100%;
     width: 100%;
     background-color: #ebecec;
   }

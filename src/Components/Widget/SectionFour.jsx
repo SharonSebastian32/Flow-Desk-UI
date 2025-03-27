@@ -9,12 +9,8 @@ import "aos/dist/aos.css";
 AOS.init();
 function SectionFour() {
   return (
-    <div className="section-four">
-      <div
-        className="most logged"
-        data-aos="fade-up"
-        data-aos-duration="500"
-      >
+    <div className="section-four" id="section-four">
+      <div className="most logged" data-aos="fade-up" data-aos-duration="500">
         <MostLogged />
       </div>
 
@@ -32,11 +28,7 @@ function SectionFour() {
       >
         <UnProductive />
       </div>
-      <div
-        className="most neutral"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      >
+      <div className="most neutral" data-aos="fade-up" data-aos-duration="3000">
         <NeutralApp />
       </div>
     </div>

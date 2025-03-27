@@ -8,6 +8,15 @@
   border-radius: 15px;
   background-color: #ffffff;
 }
+@media (max-width: 430px) {
+  #section-four {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+}
+
 @media (max-width: 1135px) {
   .section-four {
     display: grid;
