@@ -223,3 +223,12 @@
     display: block;
   }
 }
+
+@media (max-width: 425px) {
+  .icon-container {
+    display: none;
+  }
+  #search-bar-input {
+    display: none;
+  }
+}
