@@ -20,12 +20,6 @@
     width: 144px;
     height: 36px;
   }
-  .icon-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-  }
 }
 .sub-header {
   background-color: #fcfcfc;
@@ -178,9 +172,6 @@
   color: "#222222";
 }
 
-
-
-
 .notification-wrapper {
   position: relative;
   display: inline-flex;
@@ -196,4 +187,39 @@
   background-color: #ff0000;
   border-radius: 50%;
   border: 1px solid #ffffff;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 1135px) {
+  .notification-wrapper {
+    display: none;
+  }
+
+  #search-bar-input {
+    width: 100px;
+  }
+  #menu-icon {
+    display: block;
+  }
+}
+
+#menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+@media (max-width: 1135px) {
+  #search-bar-input {
+    width: 300px;
+  }
+  #menu-icon {
+    display: block;
+  }
 }

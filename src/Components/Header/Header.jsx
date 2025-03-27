@@ -4,6 +4,7 @@ import { GoChevronRight } from "react-icons/go";
 import { FaCalendarDays } from "react-icons/fa6";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { MdOutlineNotifications } from "react-icons/md";
+import { IoMdMenu } from "react-icons/io";
 
 import Logo from "../../assets/Logo.png";
 import "./Header.scss";
@@ -70,7 +71,9 @@ function Header() {
           })}
         </div>
       </div>
-
+      <span>
+        <IoMdMenu id="menu-icon" />
+      </span>
       <div className="line-seperator"></div>
       <div className="sub-header">
         <div className="text-dash">Dashboard</div>

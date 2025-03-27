@@ -10,3 +10,14 @@
   border-radius: 15px;
   background: #ffffff;
 }
+
+@media (max-width: 1135px) {
+  .section-one-container {
+    display: grid;
+    column-gap: 20px;
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+  }
+}

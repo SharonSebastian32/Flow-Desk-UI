@@ -11,10 +11,25 @@
   width: 82px;
   height: 1369px;
 }
+
 #DataInformation {
   width: calc(100% - 82px);
   height: 1369px;
   background-color: #ebecec;
+}
+
+@media (max-width: 1135px) {
+  #sidebar {
+    background-color: #002741;
+    width: 82px;
+    height: 2000;
+  }
+  #DataInformation {
+    width: calc(100% - 82px);
+    height: 3334px;
+    width: 100%;
+    background-color: #ebecec;
+  }
 }
 
 .menuIcons {
@@ -73,4 +88,10 @@
 
 #DashBoardSectionS {
   margin: 10px;
+}
+
+@media (max-width: 1135px) {
+  #sidebar {
+    display: none;
+  }
 }
