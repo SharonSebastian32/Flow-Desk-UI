@@ -15,14 +15,12 @@ const CHART_HEIGHT = {
 };
 
 const WorkingTimeDonut = () => {
-  // Calculate real percentages based on series values
-  const total = TIME_DATA.series.reduce((acc, val) => acc + val, 0);
+   const total = TIME_DATA.series.reduce((acc, val) => acc + val, 0);
   const calculatedPercentages = TIME_DATA.series.map((value) =>
     Math.round((value / total) * 100)
   );
 
-  // State to track the currently selected segment
-  const [selectedSegment, setSelectedSegment] = useState({
+   const [selectedSegment, setSelectedSegment] = useState({
     label: "Total",
     percentage: "100%",
     color: "#666666",

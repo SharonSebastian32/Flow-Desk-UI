@@ -3,6 +3,7 @@
   column-gap: 6px;
   padding-top: 10px;
   grid-template-columns: 305px auto 308px;
+
   .comp {
     height: 455px;
     border-radius: 15px;
@@ -10,5 +11,16 @@
 
   .working {
     background-color: #ffffff;
+  }
+}
+
+@media (max-width: 1135px) {
+  .section-two {
+    display: grid;
+    column-gap: 20px;
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
   }
 }
