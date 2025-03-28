@@ -7,10 +7,12 @@ function MostProductive() {
   const MostProductivePersons = [
     {
       id: 1,
-      fname: "Mariya",
+      fname: "Mariya Biya Elizabath",
       time: "4h 15m",
       avatarColor: "#ffd901",
       avatar: "M",
+      profileImage:
+        "https://i.pinimg.com/736x/fd/7d/fd/fd7dfd97a98a67c71bdf239dae7be115.jpg",
     },
     {
       id: 2,
@@ -43,11 +45,27 @@ function MostProductive() {
         {MostProductivePersons.map((item) => (
           <div className="desk-bar-container" key={item.id}>
             <div className="user-info">
-              <div
+              {/* <div
                 className="avatar"
                 style={{ backgroundColor: item.avatarColor }}
               >
                 <span className="name-avatar">{item.avatar}</span>
+              </div> */}
+
+              <div
+                className="avatar"
+                style={{
+                  backgroundColor: item.avatarColor,
+                  backgroundImage: item.profileImage
+                    ? `url(${item.profileImage})`
+                    : null,
+                  backgroundSize: item.profileImage ? "cover" : null,
+                  backgroundPosition: item.profileImage ? "center" : null,
+                }}
+              >
+                {!item?.profileImage && (
+                  <span className="name-avatar">{item.avatar}</span>
+                )}
               </div>
               <div className="user-name">{item.fname}</div>
             </div>

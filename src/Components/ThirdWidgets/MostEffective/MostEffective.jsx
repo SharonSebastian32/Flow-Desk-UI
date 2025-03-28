@@ -52,6 +52,7 @@ function MostEffective() {
                   backgroundImage: item.profileImage
                     ? `url(${item.profileImage})`
                     : null,
+                  backgroundRepeat: item.profileImage ? "no-repeat" : null,
                   backgroundSize: item.profileImage ? "cover" : null,
                   backgroundPosition: item.profileImage ? "center" : null,
                 }}
