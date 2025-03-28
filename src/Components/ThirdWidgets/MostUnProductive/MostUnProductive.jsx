@@ -45,13 +45,6 @@ function MostUnProductive() {
         {MostUnProductivePersons.map((item) => (
           <div className="desk-bar-container" key={item.id}>
             <div className="user-info">
-              {/* <div
-                className="avatar"
-                style={{ backgroundColor: item.avatarColor }}
-              >
-                <span className="name-avatar">{item.avatar}</span>
-              </div> */}
-
               <div
                 className="avatar"
                 style={{
