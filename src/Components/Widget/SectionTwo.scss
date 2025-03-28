@@ -4,11 +4,9 @@
   padding-top: 10px;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: 1fr;
-
   .comp {
     border-radius: 15px;
   }
-
   .working {
     background-color: #ffffff;
   }
@@ -52,8 +50,4 @@
   grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
-
-@media (max-width: 1135px) {
-  #pro-slack {
-  }
-}
+ 
