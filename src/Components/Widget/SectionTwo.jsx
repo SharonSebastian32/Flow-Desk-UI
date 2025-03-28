@@ -62,11 +62,7 @@ function SectionTwo() {
       {/* Productive, Slacking */}
       <div
         className="comp twoComponents"
-        style={{
-          display: "grid",
-          gridTemplateRows: "1fr 1fr",
-          gap: "10px",
-        }}
+        id="pro-slack"
       >
         {/* Productive Component */}
         <ProductionInPercentile />

@@ -2,10 +2,10 @@
   display: grid;
   column-gap: 6px;
   padding-top: 10px;
-  grid-template-columns: 305px auto 308px;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr;
 
   .comp {
-    height: 455px;
     border-radius: 15px;
   }
 
@@ -32,7 +32,7 @@
     column-gap: 20px;
     padding-top: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows:   1fr;
     row-gap: 10px;
   }
 }
@@ -45,4 +45,15 @@
   gap: 10px;
   margin-left: 3px;
   margin-right: 3px;
+}
+
+#pro-slack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 1135px) {
+  #pro-slack {
+  }
 }
