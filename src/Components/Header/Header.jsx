@@ -5,6 +5,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { MdOutlineNotifications } from "react-icons/md";
 import { IoMdMenu } from "react-icons/io";
+import { IoMdMoon } from "react-icons/io";
 
 import Logo from "../../assets/Logo.png";
 import "./Header.scss";
@@ -48,6 +49,9 @@ function Header() {
             {USER_ROLE[0].notification && (
               <span className="notification-dot"></span>
             )}
+          </div>
+          <div className="notification-wrapper">
+            <IoMdMoon className="notification-icon" />
           </div>
 
           {USER_ROLE.map((ROLE) => {
