@@ -2,8 +2,10 @@
   color: black;
   display: grid;
   grid-template-columns: 305px 1fr 308px;
-  gap: 4px;
+ 
   padding-top: 8px;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 
 .item {

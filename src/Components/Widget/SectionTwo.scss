@@ -1,8 +1,9 @@
 .section-two {
   display: grid;
-  column-gap: 6px;
+  row-gap: 10px;
+  column-gap: 10px;
   padding-top: 10px;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 305px 1fr 308px;
   grid-template-rows: 1fr;
   .comp {
     border-radius: 15px;
@@ -30,7 +31,7 @@
     column-gap: 20px;
     padding-top: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows:   1fr;
+    grid-template-rows: 1fr;
     row-gap: 10px;
   }
 }
@@ -50,4 +51,3 @@
   grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
- 

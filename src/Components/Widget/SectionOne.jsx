@@ -9,7 +9,7 @@ AOS.init();
 function SectionOne() {
   return (
     <div className="section-one-container">
-      <div className="item item-1" data-aos="zoom-in">
+      <div className="item item-1" data-aos="fade-up" data-aos-duration="1000">
         <Clock />
       </div>
       <div className="item item-2" data-aos="fade-up" data-aos-duration="2000">

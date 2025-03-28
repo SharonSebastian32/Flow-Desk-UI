@@ -50,9 +50,7 @@ function Header() {
               <span className="notification-dot"></span>
             )}
           </div>
-          <div className="notification-wrapper">
-            <IoMdMoon className="notification-icon" />
-          </div>
+        
 
           {USER_ROLE.map((ROLE) => {
             return (
